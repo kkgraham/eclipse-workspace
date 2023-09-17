@@ -1,0 +1,70 @@
+package m5;
+
+class Monkey extends RescueAnimal {
+	//Instance Variable
+	private String Species;
+	private String tailLength;
+	private String height;
+	private String bodyLength;
+	
+	//Constructor
+	public Monkey(String name, String species, String gender, String age,
+		    String weight, String acquisitionDate, String acquisitionCountry,
+			String trainingStatus, boolean reserved, String inServiceCountry, String tailLength, String height,
+			String bodyLength) {
+				name = "none";
+				species = "none";
+				gender = "none";
+				age = "0";
+				weight = "0";
+				acquisitionDate = "00/00/0000";
+				acquisitionCountry = "none";
+				trainingStatus = "none";
+				reserved = false;
+				inServiceCountry = "none";
+				tailLength = "0";
+				height = "0";
+				bodyLength = "0";
+		       	setName(name);
+		        setSpecies(species);
+		        setGender(gender);
+		        setAge(age);
+		        setWeight(weight);
+		        setAcquisitionDate(acquisitionDate);
+		        setAcquisitionLocation(acquisitionCountry);
+		        setTrainingStatus(trainingStatus);
+		        setReserved(reserved);
+		        setInServiceCountry(inServiceCountry);
+		        setTailLength(tailLength);
+		        setHeight(height);
+		        setBodyLength(bodyLength);        
+	}
+
+	//Mutators
+	public void setTailLength(String tailLength) {
+		this.tailLength = tailLength;
+	}
+	public void setSpecies(String species) {
+		this.Species = species;
+	}
+	public void setBodyLength(String bodyLength) {
+		this.bodyLength = bodyLength;
+	}
+	public void setHeight(String height) {
+		this.height = height;
+	}
+
+	//Accessors
+	public String getSpecies() {
+		return Species;
+	}
+	public String getBodyLength() {
+		return bodyLength;
+	}
+	public String getTailLength() {
+		return tailLength;
+	}
+	public String getHeight() {
+		return height;
+	}	
+}
